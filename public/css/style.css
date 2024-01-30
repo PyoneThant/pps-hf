@@ -1,0 +1,195 @@
+/* Ensure the navbar background is white and text is styled correctly */
+
+body {
+    font-size: 16px;
+}
+
+li a {
+    font-size: 1.5rem;
+}
+
+footer li a {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+
+.navbar-light {
+    background-color: #ffffff !important;
+    /* Force override if necessary */
+}
+
+.navbar-brand {
+    color: #000000 !important;
+    /* Black text for brand */
+}
+
+.nav-link {
+    color: #000000 !important;
+    /* Black text for navigation links */
+}
+
+/* Style the buttons with the required icons */
+.btn-outline-primary {
+    color: #000000;
+    border-color: #000000;
+}
+
+.btn-outline-primary i {
+    margin-right: 5px;
+    /* Icon spacing */
+}
+
+.btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-primary i {
+    margin-right: 5px;
+    /* Icon spacing */
+}
+
+/* Sticky footer CSS */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Footer links styling */
+.footer-link {
+    color: #ffffff !important;
+    /* White text for links */
+    padding: 0 15px;
+    /* Spacing between links */
+    text-decoration: none !important;
+    /* Remove underline */
+}
+
+.footer-link:hover {
+    text-decoration: underline !important;
+    /* Underline on hover */
+}
+
+
+
+@media (max-width: 768px) {
+    .footer .container {
+        padding: 20px;
+    }
+
+    .footer .col {
+        margin-bottom: 20px;
+    }
+
+    .footer h5 {
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        font-size: 1rem;
+        /* Adjust the font size for smaller screens */
+    }
+
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .text-start, .footer .text-end {
+        text-align: center !important;
+    }
+
+    .footer .col h5,
+    .footer .col ul {
+        text-align: left;
+        /* Change this to center if you want text centered */
+    }
+
+    .footer ul {
+        padding: 0;
+        list-style: none;
+        /* Remove bullet points from list items */
+    }
+
+    .footer ul li {
+        margin-bottom: 5px;
+        /* This will add space between list items */
+    }
+
+    .footer ul li a {
+        font-weight: normal;
+        /* Adjust weight as needed */
+        font-size: 1rem;
+        /* Adjust font size as needed */
+        line-height: 1.5;
+        /* This increases the space between lines of text */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-link {
+        display: block;
+        /* Each link takes its own line */
+        margin-bottom: 5px;
+        /* Add some space below each link */
+    }
+
+    .footer .col {
+        margin-bottom: 0;
+        /* Remove margin bottom on very small screens */
+    }
+
+    .footer .col h5,
+    .footer .col ul,
+    .footer .col p {
+        text-align: center;
+        /* Center text for very small screens */
+    }
+
+    .footer ul li a {
+        font-size: 0.9rem;
+        /* You might want a smaller font size on very small screens */
+    }
+}
+
+/* Adjust the navbar container */
+.navbar .container-fluid {
+    max-width: 80%;
+    /* Adjust this percentage to match your design */
+    margin: auto;
+}
+
+/* Adjust the space on the left of the navbar items */
+.navbar-nav {
+    margin-left: 2rem;
+    /* Adjust this value to match the space you want */
+}
+
+/* Adjust the navbar-brand margin to align the logo and nav-items properly */
+.navbar-brand {
+    margin-right: 0;
+    /* You can adjust this if needed */
+}
+
+/* Additional responsiveness if needed */
+@media (max-width: 992px) {
+    .navbar .container-fluid {
+        max-width: 90%;
+        /* Looser width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .container-fluid {
+        max-width: 100%;
+        /* Full width on very small screens */
+    }
+}
